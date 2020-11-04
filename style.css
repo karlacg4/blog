@@ -1,0 +1,81 @@
+body {
+    
+    padding: 75px 150px;
+}
+
+main {
+    padding: 80px 150px;
+
+    background-color: #e0bfa0;
+}
+
+.navbar-custom {
+    background-color: #111523;
+}
+
+
+/* change the brand and text color */
+
+.navbar-custom .navbar-brand {
+    color: #fafafa !important;
+}
+
+
+/* change the link color */
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #fafafa !important;
+}
+
+
+/* change the color of active or hovered links */
+
+.navbar-custom .nav-item.active .nav-link {
+    color: #E3B668 !important;
+}
+
+.navbar-custom .nav-item:hover .nav-link {
+    color: #CFB88F !important;
+}
+
+.cust-container{
+    background-color: #ffffff;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+
+.card{
+    margin: auto !important;
+}
+
+.border-pink{
+    border: #BF999C solid 3px !important;
+    border-radius: 0px !important;
+    
+}
+
+.button {
+    border: none;
+    color: white;
+    height: 30px;
+    padding: 0px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #A68072;
+  }
+  
+  .button2:hover {
+    background-color: #A68072;
+    color: white;
+  }
