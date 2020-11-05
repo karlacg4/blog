@@ -6,6 +6,10 @@ main {
   /* position: fixed; */
 }
 
+main.blog{
+  background-color:  #bf999c;
+}
+
 /* Navbar */
 
 .navbar-custom {
@@ -42,6 +46,7 @@ main {
   padding-right: 80px;
 }
 
+
 .desc-container {
   height: 400px;
   border: 1px solid green;
@@ -74,6 +79,8 @@ main {
 .mT40 {
   margin-top: 40px;
 }
+
+
 
 /* Buttons */
 

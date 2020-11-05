@@ -1,11 +1,11 @@
-body {
+/* body {
     padding-top: 80px;
 }
 
 main {
     padding: 20px;
     background-color: #fafafa;
-}
+} */
 
 .navbar-custom {
     background-color: #111523;
@@ -61,6 +61,11 @@ img.med {
 .pdT40 {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.pdB80 {
+    
+    padding-bottom: 80px;
 }
 
 .pdT50 {
@@ -134,7 +139,7 @@ img.huge {
 }
 
 .bcYw {
-    background-color: #E3B668;
+    background-color: #A68072;
 }
 
 
