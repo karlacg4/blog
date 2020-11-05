@@ -58,6 +58,11 @@ main {
   border-radius: 0px !important;
 }
 
+
+.borderBg {
+  border: 8px solid #CFB88F;
+}
+
 /* Paddings */
 
 .pT40 {
