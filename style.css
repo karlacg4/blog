@@ -1,25 +1,22 @@
-body {
-    
-    padding: 75px 150px;
-}
 
 main {
-    padding: 80px 150px;
-
-    background-color: #e0bfa0;
+  padding: 80px 150px;
+  background-color: #e0bfa0;
+  height: 100%;
+  /* position: fixed; */
 }
+
+/* Navbar */
 
 .navbar-custom {
-    background-color: #111523;
+  background-color: #111523;
 }
-
 
 /* change the brand and text color */
 
 .navbar-custom .navbar-brand {
-    color: #fafafa !important;
+  color: #fafafa !important;
 }
-
 
 /* change the link color */
 
@@ -27,55 +24,99 @@ main {
   color: #fafafa !important;
 }
 
-
 /* change the color of active or hovered links */
 
 .navbar-custom .nav-item.active .nav-link {
-    color: #E3B668 !important;
+  color: #e0bfa0 !important;
 }
 
 .navbar-custom .nav-item:hover .nav-link {
-    color: #CFB88F !important;
+  color: #bf999c !important;
 }
 
-.cust-container{
-    background-color: #ffffff;
-    padding-left: 80px;
-    padding-right: 80px;
-    
+/* Containers */
+
+.cust-container {
+  background-color: #ffffff;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
-.card{
-    margin: auto !important;
+.desc-container {
+  height: 400px;
+  border: 1px solid green;
 }
 
-.border-pink{
-    border: #BF999C solid 3px !important;
-    border-radius: 0px !important;
-    
+.body-container {
+  padding: 75px 150px 0px 150px;
 }
+
+/* Borders */
+
+.border-pink {
+  border: #bf999c solid 3px !important;
+  border-radius: 0px !important;
+}
+
+/* Paddings */
+
+.pT40 {
+  padding-top: 40px;
+}
+
+/* Margins */
+
+.mT40 {
+  margin-top: 40px;
+}
+
+/* Buttons */
 
 .button {
-    border: none;
-    color: white;
-    height: 30px;
-    padding: 0px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 1px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button2 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #A68072;
-  }
-  
-  .button2:hover {
-    background-color: #A68072;
-    color: white;
+  border: none;
+  color: white;
+  height: 30px;
+  padding: 0px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #a68072;
+}
+
+.button2:hover {
+  background-color: #a68072;
+  color: white;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+/* Align modifiers */
+
+.a-center {
+  text-align: center;
+}
+
+/* Img */
+
+.md-img {
+  width: 300px;
+  height: 400px;
+  border: 1px solid red;
+}
+
+/* Rosita nose como clasificar esto */
+
+.card {
+    margin: auto !important;
   }
