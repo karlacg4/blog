@@ -1,174 +1,195 @@
-
 main {
-  padding: 80px 150px;
-  background-color: #e0bfa0;
-  height: 100%;
-  /* position: fixed; */
-  font-family: 'Open Sans', sans-serif;
+    <<<<<<< HEAD padding: 80px 150px;
+    background-color: #e0bfa0;
+    height: 100%;
+    /* position: fixed; */
+    font-family: 'Open Sans', sans-serif;
+    =======padding: 80px 150px;
+    background-color: #e0bfa0;
+    height: 100%;
+    /* position: fixed; */
+    >>>>>>>Rosita
 }
 
-main.blog{
-  background-color:  #bf999c;
+main.blog {
+    background-color: #bf999c;
 }
+
 
 /* Navbar */
 
 .navbar-custom {
-  background-color: #111523;
+    background-color: #111523;
 }
+
 
 /* change the brand and text color */
 
 .navbar-custom .navbar-brand {
-  color: #fafafa !important;
+    color: #fafafa !important;
 }
+
 
 /* change the link color */
 
 .navbar-custom .navbar-nav .nav-link {
-  color: #fafafa !important;
+    color: #fafafa !important;
 }
+
 
 /* change the color of active or hovered links */
 
 .navbar-custom .nav-item.active .nav-link {
-  color: #e0bfa0 !important;
+    color: #e0bfa0 !important;
 }
 
 .navbar-custom .nav-item:hover .nav-link {
-  color: #bf999c !important;
+    color: #bf999c !important;
 }
+
 
 /* Containers */
 
 .cust-container {
-  background-color: #ffffff;
-  padding-left: 80px;
-  padding-right: 80px;
+    background-color: #ffffff;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .desc-container {
-  height: 1000px;
-  border: 1px solid green;
+    height: 400px;
+    border: 1px solid green;
 }
 
 .desc-container1 {
-  height: 480px;
-  /* border: 1px solid green; */
+    height: 480px;
+    /* border: 1px solid green; */
+}
+
+.desc-container3 {
+    height: 1400px;
 }
 
 .body-container {
-  padding: 75px 150px 0px 150px;
+    padding: 75px 150px 0px 150px;
 }
+
 
 /* Borders */
 
 .border-pink {
-  border: #bf999c solid 3px !important;
-  border-radius: 0px !important;
+    border: #bf999c solid 3px !important;
+    border-radius: 0px !important;
 }
+
 
 /* Paddings */
 
 .pT40 {
-  padding-top: 40px;
+    padding-top: 40px;
 }
 
 .pL15 {
-  padding-left: 15px;
+    padding-left: 15px;
 }
+
 
 /* Margins */
 
 .mT40 {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 
 /* Buttons */
 
 .button {
-  border: none;
-  color: white;
-  height: 30px;
-  padding: 0px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 1px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+    border: none;
+    color: white;
+    height: 30px;
+    padding: 0px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button2 {
-  background-color: white;
-  color: black;
-  border: 2px solid #a68072;
+    background-color: white;
+    color: black;
+    border: 2px solid #a68072;
 }
 
-
 .button2:hover {
-  background-color: #a68072;
-  color: white;
+    background-color: #a68072;
+    color: white;
 }
 
 button:focus {
-  outline: 0 !important;
+    outline: 0 !important;
 }
+
 
 /* Align modifiers */
 
 .a-left {
-  text-align: left;
+    text-align: left;
 }
 
 .a-right {
-  text-align: right;
+    text-align: right;
 }
 
 .a-center-table {
-  margin: auto;
+    margin: auto;
 }
 
 .a-center {
-  text-align: center;
+    text-align: center;
 }
 
-.a-just{
-  text-align: justify;
+<<<<<<< HEAD .a-just {
+    text-align: justify;
 }
 
+=======>>>>>>>Rosita
 /* Img */
 
 .md-img {
-  width: 300px;
-  height: 400px;
-  border: 1px solid red;
+    width: 300px;
+    height: 400px;
+    border: 1px solid red;
 }
 
-.poster{
-  padding: 5px;
-  height: 230px;
+.poster {
+    padding: 5px;
+    height: 230px;
 }
 
+<<<<<<< HEAD
 /*Text*/
-.txtBig{
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 7px;
-  font-size: 65px;
-}
-.bold{
-  font-weight: bold;
+
+.txtBig {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 7px;
+    font-size: 65px;
 }
 
-.subT{
-  color: #9999A1;
-  font-size: 20px;
+.bold {
+    font-weight: bold;
 }
 
+.subT {
+    color: #9999A1;
+    font-size: 20px;
+}
+
+=======>>>>>>>Rosita
 /* Rosita nose como clasificar esto */
 
 .card {
     margin: auto !important;
-  }
+}
