@@ -166,7 +166,8 @@ button:focus {
 
 .poster {
     padding: 5px;
-    height: 230px;
+    /* height: 230px; */
+    height: auto;
 }
 
 /*Text*/
