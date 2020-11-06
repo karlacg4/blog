@@ -158,6 +158,9 @@ button:focus {
   letter-spacing: 7px;
   font-size: 65px;
 }
+.bold{
+  font-weight: bold;
+}
 
 .subT{
   color: #9999A1;
