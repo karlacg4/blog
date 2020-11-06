@@ -1,14 +1,9 @@
 main {
-    <<<<<<< HEAD padding: 80px 150px;
+    padding: 80px 150px;
     background-color: #e0bfa0;
     height: 100%;
     /* position: fixed; */
     font-family: 'Open Sans', sans-serif;
-    =======padding: 80px 150px;
-    background-color: #e0bfa0;
-    height: 100%;
-    /* position: fixed; */
-    >>>>>>>Rosita
 }
 
 main.blog {
