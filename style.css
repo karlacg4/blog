@@ -4,6 +4,7 @@ main {
   background-color: #e0bfa0;
   height: 100%;
   /* position: fixed; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 main.blog{
@@ -48,7 +49,7 @@ main.blog{
 
 
 .desc-container {
-  height: 400px;
+  height: 1000px;
   border: 1px solid green;
 }
 
@@ -98,6 +99,7 @@ main.blog{
   border: 2px solid #a68072;
 }
 
+
 .button2:hover {
   background-color: #a68072;
   color: white;
@@ -113,6 +115,10 @@ button:focus {
   text-align: center;
 }
 
+.a-just{
+  text-align: justify;
+}
+
 /* Img */
 
 .md-img {
@@ -124,6 +130,18 @@ button:focus {
 .poster{
   padding: 5px;
   height: 230px;
+}
+
+/*Text*/
+.txtBig{
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 7px;
+  font-size: 65px;
+}
+
+.subT{
+  color: #9999A1;
+  font-size: 20px;
 }
 
 /* Rosita nose como clasificar esto */
