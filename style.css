@@ -46,10 +46,14 @@ main.blog{
   padding-right: 80px;
 }
 
-
 .desc-container {
   height: 400px;
   border: 1px solid green;
+}
+
+.desc-container1 {
+  height: 480px;
+  /* border: 1px solid green; */
 }
 
 .body-container {
@@ -69,6 +73,10 @@ main.blog{
   padding-top: 40px;
 }
 
+.pL15 {
+  padding-left: 15px;
+}
+
 /* Margins */
 
 .mT40 {
@@ -78,6 +86,10 @@ main.blog{
 /*text*/
 .txtBig{
   
+}
+
+.bold {
+  font-weight: bold;
 }
 
 
@@ -113,6 +125,18 @@ button:focus {
 }
 
 /* Align modifiers */
+
+.a-left {
+  text-align: left;
+}
+
+.a-right {
+  text-align: right;
+}
+
+.a-center-table {
+  margin: auto;
+}
 
 .a-center {
   text-align: center;
