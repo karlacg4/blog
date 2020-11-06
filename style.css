@@ -77,6 +77,11 @@ main.blog {
     border-radius: 0px !important;
 }
 
+/*lines*/
+.short-line{
+  width: 20%;
+  margin-top: -10px;
+}
 
 /* Paddings */
 
