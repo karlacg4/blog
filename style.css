@@ -75,11 +75,6 @@ main.blog{
   margin-top: 40px;
 }
 
-/*text*/
-.txtBig{
-  
-}
-
 
 /* Buttons */
 
@@ -124,6 +119,11 @@ button:focus {
   width: 300px;
   height: 400px;
   border: 1px solid red;
+}
+
+.poster{
+  padding: 5px;
+  height: 230px;
 }
 
 /* Rosita nose como clasificar esto */
