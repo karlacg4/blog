@@ -55,13 +55,6 @@ app.post('/post', (req, res) => {
     }); // crea la entidad
     movie.save(); // guarda en bd
 
-    var http = require('http');
-    http.createServer(function(req, res) {
-        res.write('<html><head></head><body>');
-        res.write('<p>Write your HTML content here</p>');
-        res.end('</body></html>');
-    }).listen(3000);
-
     res.sendFile(__dirname + '/html/form.html');
 });
 
