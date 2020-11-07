@@ -6,15 +6,10 @@ router.get('/post', (req, res) => {
     res.render('add', { movie: new Movie() });
 });
 
-
 router.get('/edit/:id', async(req, res) => {
     const movie = await Movie.findById(req.params.id);
     res.render('edit', { movie: movie });
 });
-/*
-router.get('/:id', async(req, res) => {
-    res.render('edit', { movie: new Movie() });
-});*/
 
 router.get('/:title', async(req, res) => {
     const movie = await Movie.findOne({ title: req.params.title });
