@@ -31,6 +31,7 @@ function saveMovieAndRedirect(path) {
     return async(req, res) => {
         const tit = req.body.inputTitle;
         const dir = req.body.inputDirector;
+        const resm = req.body.inputResume;
         const desc = req.body.inputDescription;
         const rat = req.body.inputRatings;
         const genr = req.body.inputGenre;
@@ -46,6 +47,7 @@ function saveMovieAndRedirect(path) {
         let movie = req.movie;
         movie.title = tit;
         movie.director = dir;
+        movie.resume = resm;
         movie.description = desc;
         movie.rating = rat;
         movie.genre = genr;
@@ -62,7 +64,7 @@ function saveMovieAndRedirect(path) {
             movie = await movie.save();
             res.redirect(`/movies/${movie.tit}`);
         } catch (e) {
-            res.render(`movies/${path}`, { movie: movie });
+            res.render(`${path}`, { movie: movie });
         }
     }
 }

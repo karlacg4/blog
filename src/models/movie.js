@@ -4,6 +4,7 @@ const { stringify } = require('querystring');
 const movieSchema = new mongoose.Schema({
     title: String,
     director: String,
+    resume: String,
     description: String,
     rating: String,
     genre: String,
