@@ -1,0 +1,99 @@
+<p class="red">Forms marked with "*" are mandatory</p>
+<br>
+<div class="form-group row">
+    <label for="inputTitle" class="col-sm-2 col-form-label">Movie Title:</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputTitle" value="<%= movie.title %>" required>
+    </div>
+    <small class="col-sm-1 red mL-10" class="text-muted">*</small>
+</div>
+<div class="form-group row">
+    <label for="inputDirector" class="col-sm-2 col-form-label">Director:</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputDirector" value="<%= movie.director %>" required>
+    </div>
+    <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+</div>
+<div class="form-group row">
+    <label for="inputDescription" class="col-sm-2 col-form-label">Movie Description:</label>
+    <div class="col-sm-9">
+        <textarea type="text" class="form-control" name="inputDescription" required><%= movie.description %></textarea>
+    </div>
+    <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+</div>
+<div class="form-group row">
+    <label for="inputRatings" class="col-sm-2 col-form-label">Ratings:</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputRatings" value="<%= movie.rating %>" required>
+    </div>
+    <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+</div>
+<div class="form-group row">
+    <label for="inputGenre" class="col-sm-2 col-form-label">Genre:</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputGenre" value="<%= movie.genre %>" required>
+    </div>
+    <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+</div>
+<div class="form-group row">
+    <label for="inputLanguage" class="col-sm-2 col-form-label">Original Language:</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputLanguage" value="<%= movie.language %>" required>
+    </div>
+    <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+</div>
+<div class="form-group row">
+    <label for="inputProducer" class="col-sm-2 col-form-label">Producer(s):</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputProducer" value="<%= movie.producer %>" required>
+    </div>
+    <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+</div>
+<div class="form-group row">
+    <label for="inputWriter" class="col-sm-2 col-form-label">Writer(s):</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputWriter" value="<%= movie.writer %>" required>
+    </div>
+    <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+</div>
+<div class="form-group row">
+    <label for="inputReleaseDate" class="col-sm-2 col-form-label">Release Date (Theaters):</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputReleaseDate" value="<%= movie.releaseDate %>">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="inputStreamingRelease" class="col-sm-2 col-form-label">Release Date (Streaming):</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputStreamingRelease" value="<%= movie.streamingRelease %>">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="inputEarnings" class="col-sm-2 col-form-label">Box Office Earnings:</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputEarnings" value="<%= movie.earnings %>">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="inputDuration" class="col-sm-2 col-form-label">Movie Duration:</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputDuration" value="<%= movie.duration %>">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="inputCompany" class="col-sm-2 col-form-label">Production Company:</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control" name="inputCompany" value="<%= movie.company %>">
+    </div>
+</div>
+<div class="form-group">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                              </label>
+        <div class="invalid-feedback">
+            You must agree before submitting.
+        </div>
+    </div>
+</div>
