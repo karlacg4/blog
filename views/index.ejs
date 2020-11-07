@@ -50,89 +50,57 @@
                 <h1 class="a-center pT40 txtBig">
                     PRETENTIOUS CORNPOP
                 </h1>
-
                 <br>
                 <br>
-
-                <!-- Blog Card 1 -->
-                <div class="card border-pink mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="../images/whiplashcover.jpg" class="card-img poster" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title bold">WHIPLASH</h5>
-                                <p class="card-text">Andrew Neiman is an ambitious young jazz drummer, in pursuit of rising to the top of his elite music conservatory. Terence Fletcher, an instructor known for his terrifying teaching methods, discovers Andrew and transfers
-                                    the aspiring drummer into the top jazz ensemble, forever changing the young man's life.</p>
-                                <a href="../html/movie1.html" class="button button2">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-
-                <!-- Blog Card 2 -->
-                <div class="card border-pink mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title bold">LADY BIRD</h5>
-                                <p class="card-text">A teenager (Saoirse Ronan) navigates a loving but turbulent relationship with her strong-willed mother (Laurie Metcalf) over the course of an eventful and poignant senior year of high school.</p>
-                                <a href="../html/movie2.html" class="button button2">Read More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="../images/movie2/poster_v.jpg" class="card-img poster" alt="...">
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-
-                <!-- Blog Card 3 -->
-                <div class="card border-pink mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="../images/movie3/portada.jpg" class="card-img poster" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title bold">NEVER LET ME GO</h5>
-                                <p class="card-text">Friends Kathy (Carey Mulligan), Tommy (Andrew Garfield) and Ruth (Keira Knightley) grow up together at a seemingly idyllic boarding school in the English countryside. When they leave the school and the horrible truth of
-                                    their true purpose is revealed to them, they must simultaneously confront deep-seated feelings of love, jealousy and betrayal that threaten to tear their friendship asunder.</p>
-                                <a href="../html/movie3.html" class="button button2">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-
-                <% movies.forEach(movie => { %>
-                    <!-- Blog Card -->
-                    <div class="card border-pink mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="../images/whiplashcover.jpg" class="card-img poster" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title bold">
-                                        <%= movie.title %>
-                                    </h5>
-                                    <p class="card-text">
-                                        <%= movie.resume %>
-                                    </p>
-                                    <a href="/movies/<%= movie.title %>" class="button button2">Read More</a>
-                                    <a href="/movies/edit/<%= movie.id %>" class="button button2">Edit</a>
+                <% aux = 1 %>
+                    <% movies.forEach(movie => { %>
+                        <% if (aux%2 == 0){%>
+                            <div class="card border-pink mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title bold">
+                                                <%= movie.title %>
+                                            </h5>
+                                            <p class="card-text">
+                                                <%= movie.resume %>
+                                            </p>
+                                            <a href="/movies/<%= movie.title %>" class="button button2">Read More</a>
+                                            <a href="/movies/edit/<%= movie.id %>" class="button button2">Edit</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="../images/movie2/poster_v.jpg" class="card-img poster" alt="...">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <% }) %>
+
+                            <hr>
+                            <%} else {%>
+                                <!-- Blog Card right-->
+                                <div class="card border-pink mb-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="../images/whiplashcover.jpg" class="card-img poster" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title bold">
+                                                    <%= movie.title %>
+                                                </h5>
+                                                <p class="card-text">
+                                                    <%= movie.resume %>
+                                                </p>
+                                                <a href="/movies/<%= movie.title %>" class="button button2">Read More</a>
+                                                <a href="/movies/edit/<%= movie.id %>" class="button button2">Edit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <% }
+                            aux += 1;
+                            }) %>
             </div>
 
         </main>

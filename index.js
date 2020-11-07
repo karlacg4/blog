@@ -10,6 +10,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
+
 app.get('/', async(req, res) => {
     const movies = await Movie.find();
     res.render('index', { movies: movies });

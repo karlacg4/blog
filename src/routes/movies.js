@@ -29,6 +29,7 @@ router.put('/:id', async(req, res, next) => {
 
 function saveMovieAndRedirect(path) {
     return async(req, res) => {
+
         const tit = req.body.inputTitle;
         const dir = req.body.inputDirector;
         const resm = req.body.inputResume;
@@ -59,10 +60,9 @@ function saveMovieAndRedirect(path) {
         movie.earnings = earn;
         movie.duration = dur;
         movie.company = comp;
-
         try {
             movie = await movie.save();
-            res.redirect(`/movies/${movie.tit}`);
+            res.redirect(`/movies/${movie.title}`);
         } catch (e) {
             res.render(`${path}`, { movie: movie });
         }
