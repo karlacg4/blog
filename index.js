@@ -22,7 +22,7 @@ app.get('/movie', (req, res) => {
 app.get('/post', (req, res) => {
     res.sendFile(__dirname + '/html/form.html');
 });
-
+ 
 app.post('/post', (req, res) => {
     const tit = req.body.inputTitle;
     const dir = req.body.inputDirector;
@@ -40,7 +40,7 @@ app.post('/post', (req, res) => {
 
     const movie = new Movie({
         title: tit,
-        director: dir,
+        director: dri,
         description: desc,
         rating: rat,
         genre: genr,
