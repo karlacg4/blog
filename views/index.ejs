@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pretentious Cornpop</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="wdth=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo_popSm.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+
+<header>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logo_pop.png" width="160" height="50" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/movies/post">New Post</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Pret Ent Inc.</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="body-container">
+        <main>
+            <div class="cust-container">
+
+                <h1 class="a-center pT40 txtBig">
+                    PRETENTIOUS CORNPOP
+                </h1>
+
+                <br>
+                <br>
+
+                <!-- Blog Card 1 -->
+                <div class="card border-pink mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="../images/whiplashcover.jpg" class="card-img poster" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title bold">WHIPLASH</h5>
+                                <p class="card-text">Andrew Neiman is an ambitious young jazz drummer, in pursuit of rising to the top of his elite music conservatory. Terence Fletcher, an instructor known for his terrifying teaching methods, discovers Andrew and transfers
+                                    the aspiring drummer into the top jazz ensemble, forever changing the young man's life.</p>
+                                <a href="../html/movie1.html" class="button button2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Blog Card 2 -->
+                <div class="card border-pink mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title bold">LADY BIRD</h5>
+                                <p class="card-text">A teenager (Saoirse Ronan) navigates a loving but turbulent relationship with her strong-willed mother (Laurie Metcalf) over the course of an eventful and poignant senior year of high school.</p>
+                                <a href="../html/movie2.html" class="button button2">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../images/movie2/poster_v.jpg" class="card-img poster" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Blog Card 3 -->
+                <div class="card border-pink mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="../images/movie3/portada.jpg" class="card-img poster" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title bold">NEVER LET ME GO</h5>
+                                <p class="card-text">Friends Kathy (Carey Mulligan), Tommy (Andrew Garfield) and Ruth (Keira Knightley) grow up together at a seemingly idyllic boarding school in the English countryside. When they leave the school and the horrible truth of
+                                    their true purpose is revealed to them, they must simultaneously confront deep-seated feelings of love, jealousy and betrayal that threaten to tear their friendship asunder.</p>
+                                <a href="../html/movie3.html" class="button button2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <% movies.forEach(movie => { %>
+                    <!-- Blog Card -->
+                    <div class="card border-pink mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="../images/whiplashcover.jpg" class="card-img poster" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title bold">
+                                        <%= movie.title %>
+                                    </h5>
+                                    <p class="card-text">
+                                        <%= movie.description %>
+                                    </p>
+                                    <a href="movies/<%= movie.title %>" class="button button2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <% }) %>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+<!-- Footer -->
+<footer id="sticky-footer" class="py-4 text-white-50 navbar-custom">
+    <div class="container text-center">
+        <small>Copyright &copy; Pretentious Cornpop</small>
+    </div>
+</footer>
+
+</html>

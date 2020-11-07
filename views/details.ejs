@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pretentious Cornpop</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="wdth=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo_popSm.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+
+<header>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="../">
+            <img src="../images/logo_pop.png" width="160" height="50" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Pret Ent Inc.</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div class="body-container">
+        <main class="blog">
+            <div class="cust-container">
+
+                <h1 class="a-center pT40 txtBig">
+                    <%= movie.title %>
+                </h1>
+                <h3 class="subT a-center">
+                    <%= movie.director %>
+                </h3>
+
+                <br>
+                <br>
+
+                <!-- Two img side by side -->
+                <div class="container pd30Cent">
+                    <div class="row">
+                        <div class="col-sm">
+                            <section class="cent">
+                                <img class="smed img-fluid borderBg Hspq" src="../images/whiplashpic1.jpg">
+                                <p class="pdT10">
+                                    <br>
+                                </p>
+                            </section>
+                        </div>
+                        <div class="col-sm">
+                            <section class="cent">
+                                <p>
+                                    <br>
+                                </p>
+                                <img class="smed img-fluid borderBg Hspq" src="../images/whiplashpic2.jpg">
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="short-line">
+
+                <!-- Movie Desc -->
+                <div class=" a-just mT40">
+                    <p>
+                        <%= movie.description %>
+                    </p>
+                    <!-- Description table -->
+                    <table class="a-center-table">
+                        <tbody>
+                            <tr>
+                                <td class="bold a-right">Ratings:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.rating %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Genre:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.genre %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Original Language:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.language %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Director:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.director %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Producer:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.producer %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Writer:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.writer %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Release Date:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.releaseDate %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Streaming Release:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.streamingRelease %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Box Office (Gross USA):</td>
+                                <td class="a-left pL15">
+                                    <%= movie.earnings %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Runtime:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.duration %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold a-right">Production Co:</td>
+                                <td class="a-left pL15">
+                                    <%= movie.company %>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <hr>
+
+                <!-- pics -->
+                <div class="container pdB80">
+                    <h2 class="pd30Cent">
+                        Movie Highlights
+                    </h2>
+
+                    <div class="row bcYw pdT40">
+                        <div class="col-sm">
+                            <section class="cent">
+                                <img class="ssmed borderWh Hpq" src="../images/whiplashpic3.jpg">
+                            </section>
+                        </div>
+                        <div class="col-sm">
+                            <section class="cent">
+                                <img class="ssmed borderWh Hpq" src="../images/whiplashpic4.jpg">
+                            </section>
+                        </div>
+                        <div class="col-sm">
+                            <section class="cent">
+                                <img class="ssmed borderWh Hpq" src="../images/whiplashpic6.jpg">
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+</body>
+
+<!-- Footer -->
+<footer id="sticky-footer" class="py-4 text-white-50 navbar-custom">
+    <div class="container text-center">
+        <small>Copyright &copy; Pretentious Cornpop</small>
+    </div>
+</footer>
+
+</html>

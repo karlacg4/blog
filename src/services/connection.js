@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost:27017/AppCornPops', {
 mongoose.connect('mongodb+srv://Rosita:120101@cluster0.ygrnh.mongodb.net/AppCornpops?retryWrites=true&w=majority', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
 });
 
 const db = mongoose.connection;
