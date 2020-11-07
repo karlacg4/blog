@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + '/src2/form.html');
 });
 
 app.post('/', (req, res) => {
@@ -22,9 +22,9 @@ app.post('/', (req, res) => {
 
     const movie = new Movie({ title: title, director: dir, description: desc }); // crea la entidad
     movie.save(); // guarda en bd
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + '/src2/form.html');
 });
 
 app.listen(3000, () => {
-    console.log('Listening on port 3000')
+    console.log('Listening on port 3000');
 });
