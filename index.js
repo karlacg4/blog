@@ -12,10 +12,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/movie', (req, res) => {
+    res.sendFile(__dirname + '/movie1.html');
+});
+
+app.get('/post', (req, res) => {
     res.sendFile(__dirname + '/html/form.html');
 });
 
-app.post('/', (req, res) => {
+app.post('/post', (req, res) => {
     const tit = req.body.inputTitle;
     const dir = req.body.inputDirector;
     const desc = req.body.inputDescription;
@@ -46,6 +54,14 @@ app.post('/', (req, res) => {
         company: comp
     }); // crea la entidad
     movie.save(); // guarda en bd
+
+    var http = require('http');
+    http.createServer(function(req, res) {
+        res.write('<html><head></head><body>');
+        res.write('<p>Write your HTML content here</p>');
+        res.end('</body></html>');
+    }).listen(3000);
+
     res.sendFile(__dirname + '/html/form.html');
 });
 
