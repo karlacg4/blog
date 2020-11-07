@@ -236,14 +236,26 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 3px solid #E3B668;
+    border: 3px solid #bf999c;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: #fafafa;
 }
 
+textarea[type=text] {
+    outline: none !important;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #bf999c;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #fafafa;
+}
+
+
 input[type=text]:focus {
-    border: 3px solid #AD3D2B !important;
+    /* border: 3px solid #AD3D2B !important; */
     background-color: #fafafa;
     outline: 0 !important;
 }

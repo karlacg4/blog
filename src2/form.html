@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pretentious Cornpop</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="wdth=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo_popSm.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="body-container-form">
+        <main class="form">
+            <div class="cust-container">
+                <h1 class="a-center pT40 txtBig">
+                    Create a Post
+                </h1>
+
+                <br>
+                <br>
+
+                <div class="form-container">
+                    <form class="needs-validation" novalidate>
+                        <p class="red">Forms marked with "*" are mandatory</p>
+                        <br>
+                        <div class="form-group row">
+                            <label for="inputTitle" class="col-sm-2 col-form-label">Movie Title:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputTitle" required>
+                            </div>
+                            <small class="col-sm-1 red mL-10" class="text-muted">*</small>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputDirector" class="col-sm-2 col-form-label">Director:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputDirector" required>
+                            </div>
+                            <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputDescription" class="col-sm-2 col-form-label">Movie Description:</label>
+                            <div class="col-sm-9">
+                                <textarea type="text" class="form-control" name="inputDescription" required></textarea>
+                            </div>
+                            <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRatings" class="col-sm-2 col-form-label">Ratings:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputRatings" required> 
+                            </div>
+                            <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputGenre" class="col-sm-2 col-form-label">Genre:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputGenre" required>
+                            </div>
+                            <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputLanguage" class="col-sm-2 col-form-label">Original Language:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputLanguage" required>
+                            </div>
+                            <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputProducer" class="col-sm-2 col-form-label">Producer(s):</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputProducer" required>
+                            </div>
+                            <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputWriter" class="col-sm-2 col-form-label">Writer(s):</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputWriter" required>
+                            </div>
+                            <small class="col-sm-1 red mL-10" id="passwordHelpInline" class="text-muted">*</small>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputReleaseDate" class="col-sm-2 col-form-label">Release Date (Theaters):</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputReleaseDate">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputStreamingRelease" class="col-sm-2 col-form-label">Release Date (Streaming):</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputStreamingRelease">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputEarnings" class="col-sm-2 col-form-label">Box Office Earnings:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputEarnings">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputDuration" class="col-sm-2 col-form-label">Movie Duration:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputDuration">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputCompany" class="col-sm-2 col-form-label">Production Company:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="inputCompany">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                              </label>
+                              <div class="invalid-feedback">
+                                You must agree before submitting.
+                              </div>
+                            </div>
+                        </div>
+                        <button class="button button2 a-center-table" type="submit">Create!</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+</script>
+
+</html>

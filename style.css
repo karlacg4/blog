@@ -2,12 +2,15 @@ main {
     padding: 80px 150px;
     background-color: #e0bfa0;
     height: 100%;
-    /* position: fixed; */
     font-family: 'Open Sans', sans-serif;
 }
 
 main.blog {
     background-color: #bf999c;
+}
+
+main.form {
+    background-color: #846463;
 }
 
 
@@ -52,13 +55,12 @@ main.blog {
 }
 
 .desc-container {
-    height: 400px;
+    height: 1000px;
     border: 1px solid green;
 }
 
 .desc-container1 {
     height: 480px;
-    /* border: 1px solid green; */
 }
 
 .desc-container3 {
@@ -69,12 +71,28 @@ main.blog {
     padding: 75px 150px 0px 150px;
 }
 
+.body-container-form {
+    padding: 0px 150px 0px 150px;
+}
+
+.form-container {
+    padding: 20px 100px 80px 100px;
+}
+
 
 /* Borders */
 
 .border-pink {
     border: #bf999c solid 3px !important;
     border-radius: 0px !important;
+}
+
+
+/* Lines */
+
+.short-line {
+    width: 20%;
+    margin-top: -10px;
 }
 
 
@@ -93,6 +111,10 @@ main.blog {
 
 .mT40 {
     margin-top: 40px;
+}
+
+.mL-10 {
+    margin-left: -25px;
 }
 
 
@@ -161,7 +183,7 @@ button:focus {
 
 .poster {
     padding: 5px;
-    height: 230px;
+    height: auto;
 }
 
 
@@ -180,6 +202,10 @@ button:focus {
 .subT {
     color: #9999A1;
     font-size: 20px;
+}
+
+.red {
+    color: red;
 }
 
 
