@@ -15,7 +15,15 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/', (req, res) => {
+app.get('/movie', (req, res) => {
+    res.sendFile(__dirname + '/movie1.html');
+});
+
+app.get('/post', (req, res) => {
+    res.sendFile(__dirname + '/html/form.html');
+});
+
+app.post('/post', (req, res) => {
     const tit = req.body.inputTitle;
     const dir = req.body.inputDirector;
     const desc = req.body.inputDescription;
@@ -46,6 +54,7 @@ app.post('/', (req, res) => {
         company: comp
     }); // crea la entidad
     movie.save(); // guarda en bd
+
     res.sendFile(__dirname + '/html/form.html');
 });
 
